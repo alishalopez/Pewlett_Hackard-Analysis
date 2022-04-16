@@ -24,7 +24,7 @@ ORDER BY emp_no, to_date DESC;
 -- Counting the number of each employee/title
 SELECT count (title) AS count, title
 INTO retiring_titles
-FROM unique_ret_titles
+FROM unique_titles
 GROUP BY title
 ORDER BY count DESC; 
 
